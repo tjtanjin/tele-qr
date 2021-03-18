@@ -45,7 +45,7 @@ def get_input(update, context):
         generating = update.message.reply_text("<b>Generating QR Code |</b>", parse_mode=ParseMode.HTML)
         threading.Thread(target=load_animation, args=(update, generating)).start()
         qh.generate_qr(chat_id, update.message.text)
-        qenerating_qr = False
+        generating_qr = False
         context.bot.send_document(chat_id=chat_id, document=open('./images/{}.png'.format(chat_id), 'rb'), caption="Here is your QR Code!")
         os.remove("./images/{}.png".format(chat_id))
     except:
