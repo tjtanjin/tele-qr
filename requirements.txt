@@ -1,5 +1,4 @@
-python-telegram-bot==20.7
+health_ping==1.0.1
 python-dotenv==1.0.1
+python-telegram-bot==20.7
 qrcode==7.4.2
-Requests==2.31.0
-schedule==1.2.1
