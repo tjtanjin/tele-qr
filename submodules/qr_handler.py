@@ -1,5 +1,6 @@
 import qrcode
 
+
 def generate_qr(chat_id, user_input):
     """
     The function generates a QR code image and saves it to be returned to the user.

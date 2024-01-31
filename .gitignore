@@ -1,3 +1,23 @@
-.DS_Store
-/config
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# temp files
 /images
+
+# build files
+/dist
+
+# test logs
+/tests/*.log
+
+# editors
+.idea/
+.vscode/
+
+# env vars
+.env
+
+# misc
+.DS_Store
