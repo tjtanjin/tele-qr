@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 
 # copy all the files to the container
 COPY . .
+RUN mkdir ./images
 
 # install app-specific dependencies
 RUN pip install --no-cache-dir -r requirements.txt
