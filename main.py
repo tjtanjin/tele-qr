@@ -9,9 +9,10 @@ from submodules.user_input import show_help, get_input
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
-HealthPing(url="https://hc-ping.com/613b74f2-e71b-49de-95e5-f8b617d23525",
-           schedule="1 * * * *",
-           retries=[60, 300, 720]).start()
+if os.getenv("HEALTHCHECKS_ENDPOINT"):
+    HealthPing(url="https://hc-ping.com/613b74f2-e71b-49de-95e5-f8b617d23525",
+               schedule="1 * * * *",
+               retries=[60, 300, 720]).start()
 
 
 def main():

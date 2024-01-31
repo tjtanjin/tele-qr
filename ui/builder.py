@@ -3,7 +3,7 @@ from telegram.constants import ParseMode
 
 async def show_animated_loader(message):
     """
-    Provides loading animation during media conversions.
+    Provides loading animation during qr code generation.
     Args:
         message: message to edit to show loader
     """
